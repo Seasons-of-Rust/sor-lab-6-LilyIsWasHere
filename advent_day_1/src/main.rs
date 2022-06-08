@@ -15,10 +15,7 @@ fn main() {
 
     println!("{:?}", module_masses);
 
-    let fuel_requirements: Vec<u32> = module_masses
-        .iter()
-        .map(fuel_required)
-        .collect();
+    let fuel_requirements: Vec<u32> = module_masses.iter().map(fuel_required).collect();
 
     let total_fuel: u32 = fuel_requirements.iter().sum();
 
